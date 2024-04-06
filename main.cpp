@@ -37,6 +37,9 @@ Copyright 2009–2024 by Codility Limited. All Rights Reserved. Unauthorized cop
 
 using namespace std;
 
+//using stoachstic method for solution
+//possible minimum but no qaurantee
+
 int solution(vector<int> &A) {
     // Implement your solution here
     auto size = A.size();
@@ -72,14 +75,10 @@ int solution(vector<int> &A) {
        if (abs(sum[i])<min) min=abs(sum[i]);
     }
     if(final_min>min) final_min=min;
-
-
     }
 
 return final_min;
 }
-
-
 
 
 int main()
